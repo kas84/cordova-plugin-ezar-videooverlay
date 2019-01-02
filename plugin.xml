@@ -33,9 +33,9 @@
 			</feature>
 		</config-file>
 		<preference name="CAMERA_USAGE_DESCRIPTION" default=" " />
-+       <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
-+             <string>$CAMERA_USAGE_DESCRIPTION</string>
-+       </config-file>
+       <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+             <string>$CAMERA_USAGE_DESCRIPTION</string>
+       </config-file>
 
 		<header-file src="src/ios/CDVezARVideoOverlay.h" />
 		<header-file src="src/ios/CDVezARCameraViewController.h" />
