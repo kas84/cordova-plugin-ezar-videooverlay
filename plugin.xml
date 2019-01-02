@@ -6,12 +6,12 @@
 	  xmlns:android="http://schemas.android.com/apk/res/android"
 	  id="cordova-plugin-ezar-videooverlay"
 	  version="1.0.0">
-	  
+
 	<name>ezAR Video Overlay Plugin</name>
-	<description>Augmented reality SDK for Cordova hybrid-mobile applications. 
+	<description>Augmented reality SDK for Cordova hybrid-mobile applications.
 				 Overlay a real-world background mobile device camera with
 				 a transparent application web (HTML) UI that has full access
-				 to all Cordova plugin apis.  
+				 to all Cordova plugin apis.
 	</description>
 	<keywords>augmented reality,video preview,overlay,computer vision</keywords>
 	<license>modified MIT License, see http://ezartech.com/ezarstartupkit-license</license>
@@ -20,11 +20,11 @@
 	<js-module src="www/videoOverlay.js" name="videoOverlay">
 		<merges target="ezar" />
 	</js-module>
-	
+
 	<js-module src="www/camera.js" name="camera">
 		<clobbers target="camera" />
 	</js-module>
-	
+
 	<!-- ios -->
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
@@ -38,13 +38,13 @@
 +       </config-file>
 
 		<header-file src="src/ios/CDVezARVideoOverlay.h" />
-		<header-file src="src/ios/CDVezARCameraViewController.h" /> 
+		<header-file src="src/ios/CDVezARCameraViewController.h" />
 		<source-file src="src/ios/CDVezARVideoOverlay.m" />
 		<source-file src="src/ios/CDVezARCameraViewController.m" />
 
 		<framework src="UIKit.framework" />
 		<framework src="Foundation.framework" />
-		<framework src="AVFoundation.framework" />	
+		<framework src="AVFoundation.framework" />
 	</platform>
 
 	<!-- android -->
@@ -60,7 +60,7 @@
 			<uses-feature android:name="android.hardware.camera.any" />
 			<uses-feature android:name="android.hardware.camera.autofocus" />
 	  </config-file>
-	  <config-file parent="/*" target="AndroidManifest.xml" />
+	  <config-file parent="/*" target="app/src/main/AndroidManifest.xml" />
 	  <source-file src="src/android/VideoOverlayPlugin.java" target-dir="src/com/ezartech/ezar/videooverlay" />
 	  <source-file src="src/android/AspectRatioFrameLayout.java" target-dir="src/com/ezartech/ezar/videooverlay" />
 	  <source-file src="src/android/VideoOverlayFrameListener.java" target-dir="src/com/ezartech/ezar/videooverlay" />
@@ -69,5 +69,5 @@
 	   <source-file src="src/android/Util.java" target-dir="src/com/ezartech/ezar/videooverlay" />
       <source-file src="src/android/PermissionHelper.java" target-dir="src/com/ezartech/ezar/videooverlay" />
   </platform>
-   
+
 </plugin>
