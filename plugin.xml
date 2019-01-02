@@ -55,7 +55,7 @@
             <param name="onload" value="false" />
 		 </feature>
 	  </config-file>
-	  <config-file target="AndroidManifest.xml" parent="/*">
+	  <config-file target="app/src/main/AndroidManifest.xml" parent="/*">
 			<uses-permission android:name="android.permission.CAMERA" />
 			<uses-feature android:name="android.hardware.camera.any" />
 			<uses-feature android:name="android.hardware.camera.autofocus" />
